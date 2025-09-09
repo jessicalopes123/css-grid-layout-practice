@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 10fr ;
+    grid-template-rows: 5fr 10fr 15fr 5fr ;
+    grid-template-areas: "cabecalho cabecalho"
+                          "menu conteudo"
+                          "aside conteudo"
+                          "rodape rodape";
+                    
+}
+
+#cabecalho{
+    background-color: rgb(244, 20, 20);
+    grid-area: cabecalho;
+    
+}
+
+#menu{
+
+    background-color: #040b46;
+     grid-area: menu;
+}
+#aside{
+    background-color: #7b0b45;
+    grid-area: aside;  
+}
+#conteudo{
+    background-color: rgb(18, 200, 18);
+    grid-area: conteudo;
+}
+#rodape{
+    background-color: rgb(19, 229, 236);
+    grid-area: rodape;
+
+}
